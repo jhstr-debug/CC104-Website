@@ -1,0 +1,32 @@
+/* Custom styles that complement Tailwind */
+.code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+}
+
+pre {
+    margin: 0;
+}
+
+.tab-button {
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #7e5bcb;
+    color: white;
+}
+
+.algorithm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

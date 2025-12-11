@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures & Algorithms Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="text-center py-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-primary-700 mb-4">AlgoSphere</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Your interactive playground for mastering algorithms and data structures in C++ and Python
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#algorithms"
+                    class="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition">Explore
+                    Algorithms</a>
+                <a href="#data-structures"
+                    class="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition">Data
+                    Structures</a>
+            </div>
+        </section>
+
+        <!-- Algorithms Section -->
+        <section id="algorithms" class="py-12">
+            <h2 class="text-3xl font-bold text-center mb-12">10 Essential Algorithms</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Algorithm cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Data Structures Section -->
+        <section id="data-structures" class="py-12">
+            <h2 class="text-3xl font-bold text-center mb-12">Data Structures Implementations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700">Arrays</h3>
+                    <p class="text-gray-600 mb-4">A collection of elements stored at contiguous memory locations</p>
+                    <div class="bg-gray-100 p-3 rounded-lg mb-4">
+                        <p class="text-sm font-mono text-gray-700">Example: [5, 2, 8, 1, 9]</p>
+                        <p class="text-xs text-gray-500 mt-1">Operations: Insert, Delete, Search, Sort</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>C++ Implementation</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Python Implementation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700">Stacks</h3>
+                    <p class="text-gray-600 mb-4">LIFO (Last In First Out) data structure</p>
+                    <div class="bg-gray-100 p-3 rounded-lg mb-4">
+                        <p class="text-sm font-mono text-gray-700">Example: Push(3) → Push(7) → Pop() = 7</p>
+                        <p class="text-xs text-gray-500 mt-1">Use cases: Undo operations, Expression evaluation</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Infix to Postfix</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Prefix Evaluation</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Postfix Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700">Queues</h3>
+                    <p class="text-gray-600 mb-4">FIFO (First In First Out) data structure</p>
+                    <div class="bg-gray-100 p-3 rounded-lg mb-4">
+                        <p class="text-sm font-mono text-gray-700">Example: Enqueue(5) → Enqueue(3) → Dequeue() = 5</p>
+                        <p class="text-xs text-gray-500 mt-1">Use cases: Task scheduling, Print queue</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Circular Queue</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Priority Queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700">Trees</h3>
+                    <p class="text-gray-600 mb-4">Hierarchical data structure with nodes and edges</p>
+                    <div class="bg-gray-100 p-3 rounded-lg mb-4">
+                        <p class="text-sm font-mono text-gray-700">Example: Binary Tree with root 10, left 5, right 15
+                        </p>
+                        <p class="text-xs text-gray-500 mt-1">Use cases: File systems, Database indexing</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Inorder Traversal</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Preorder Traversal</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="code" class="text-secondary-500"></i>
+                            <span>Postorder Traversal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pseudocode Section -->
+        <section id="pseudocode" class="py-12">
+            <h2 class="text-3xl font-bold text-center mb-12">10 Pseudocode Examples</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Pseudocode examples will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+
+</body>
+
+</html>
